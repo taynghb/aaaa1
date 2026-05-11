@@ -1,0 +1,31 @@
+<!DOCTYPE html> 
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Планировщик задач</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="stats-badge" id="taskCounter">Всего задач: 0</div>
+    </header>
+    <div class="add-task-panel">
+      <input type="text" id="taskInput" placeholder="Новая задача" />
+      <button class="btn-primary" id="addBtn">Добавить</button>
+    </div>
+    <div class="filter-bar">
+      <input type="text" id="searchInput" placeholder="Поиск по тексту" />
+      <select id="sortSelect">
+        <option value="default">По порядку</option>
+        <option value="nameAsc">А → Я</option>
+        <option value="nameDesc">Я → А</option>
+      </select>
+    </div>
+    <div class="board" id="board"></div>
+
+  <div class="notification-area" id="notificationArea"></div>
+</body>
+</html>
